@@ -1,0 +1,33 @@
+{
+    "name": "zhukangs/BaseJwt",
+    "description": "A base JWT",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhukangs",
+            "email": "910008482@qq.com"
+        }
+    ],
+    "require": {
+        "lcobucci/jwt": "^3.3",
+        "predis/predis": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "zhukangs\\BaseJwt\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "zhukangs\\BaseJwt\\ServiceProvider"
+            ]
+        }
+    },
+    "repositories": {
+        "BaseJwt": {
+            "type": "path",
+            "url": "../BaseJwt"
+        }
+    }
+}
