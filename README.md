@@ -6,13 +6,13 @@
 composer require zhukangs/BaseJwt:dev-master
 ```
 
-2.发布src下的核心代码
+2.发布 `src` 下的核心代码
 
 ```php
 php artisan vendor:publish --provider="zhukangs\BaseJwt\ServiceProvider"
 ```
 
-3.在.env下加上如下代码
+3.在 `.env` 下加上如下代码
 
 ```php
 JWT_KEY='basejwt'
@@ -20,7 +20,7 @@ JWT_ACCESS_EXP=900
 JWT_REFRESH_EXP=7200
 ```
 
-4.编辑 app\Exceptions\Handler.php，添加如下代码
+4.编辑 `app\Exceptions\Handler.php`，添加如下代码
 
 ```php
 public function render($request, Exception $exception)
@@ -63,7 +63,7 @@ public function render($request, Exception $exception)
 }
 ```
 
-6.编辑app\Http\Kernel.php，添加如下代码
+6.编辑 `app\Http\Kernel.php`，添加如下代码
 
 ```php
 protected $middleware = [
@@ -77,7 +77,7 @@ protected $routeMiddleware = [
     ];
 ```
 
-7.移除扩展包
+7.移除
 
 ```php
  rm -rf vendor/zhukangs/BaseJwt/src/Api
@@ -102,7 +102,7 @@ public function toLogin(Request $request)
     }
 ```
 
-9.需要token的路由
+9.需要 `token` 的路由
 
 ```php
 Route::group([
