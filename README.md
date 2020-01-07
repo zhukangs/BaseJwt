@@ -3,7 +3,7 @@
 1.安装扩展包
 
 ```php
-composer require zhukangs/BaseJwt:dev-master
+composer require zhukangs/base-jwt
 ```
 
 2.发布 `src` 下的核心代码
